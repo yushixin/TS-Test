@@ -1,12 +1,9 @@
 "use strict";
-function hahaha() {
-    var xuqiu = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        xuqiu[_i] = arguments[_i];
-    }
-    var yy = '';
+//TS的形参 剩余形参
+function hahaha(...xuqiu) {
+    let yy = '';
     yy = '哈哈';
-    for (var i = 0; i < xuqiu.length; i++) {
+    for (let i = 0; i < xuqiu.length; i++) {
         yy = yy + xuqiu[i];
         if (i < xuqiu.length) {
             yy = yy + '、';
